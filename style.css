@@ -4,15 +4,25 @@ html {
   background-color: #14171A;
   color: #9DA2A5;
 }
-
-
 p {
   margin: 0;
   padding: 0;
   line-height: 15px;
   text-align: center;
 }
-
+.page{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.settings{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding:1rem;
+}
 #title {
   padding-top: 15px;
 }
@@ -20,7 +30,9 @@ p {
 #view {
   padding-top: 30px;
 }
-
+.inp{
+  width: 50%;
+}
 #generate {
   text-align: center;
   width : 100px;
