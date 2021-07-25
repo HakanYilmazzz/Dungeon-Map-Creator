@@ -10,7 +10,25 @@ p {
   line-height: 15px;
   text-align: center;
 }
+.header{
+  display: flex;
+  position: fixed;
+}
+canvas{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+#copy{
+  font-size: 12px;
+  background-color: transparent;
+  outline:none;
+  border:0;
+  color: #14171A;
+}
 .page{
+  top:10px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

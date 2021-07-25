@@ -7,4 +7,4 @@ Basitçe harita taslakları oluşturmanı sağlar.
 
 - [X] Rastgele harita oluşturma
 - [ ] Görsel Düzenleme
-- [X] Dinamik veri girişi yapabilme
+- [ ] Dinamik veri girişi yapabilme

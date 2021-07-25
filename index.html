@@ -7,43 +7,51 @@
 
 	<title>Dungeon Haritası</title>
 	<link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-  
-  <p id="title">Basitçe Dungeon haritası taslağı oluştur</p>
-  <div class="page">
-  <div style="display: flex;flex-direction: column;"> <!--Canvas-->
-      <div id="view"></div>
-      <div id="generate">Oluştur</div>
+  <div class="header">
+  <!-- <p id="title">Basitçe Dungeon haritası taslağı oluştur<span style="color:#14171A"> "Congrats u found a easter egg for nothing"</span></p> -->
+  <canvas id="scene"></canvas>
+  <input id="copy" type="text" value="Dungeon Maker" />
   </div>
 
-  <div class="settings"> <!--Settings-->
-    <span>Max oda boyutu: </span>
-    <input class="inp" type="range" value="24" min="1" max="64" oninput="this.nextElementSibling.value = this.value">
-    <output class="max">24</output>
-    <hr style="width: 100%;">
-    <span>Min oda boyutu: </span>
-    <input class="inp" type="range" value="4" min="1" max="64" oninput="this.nextElementSibling.value = this.value">
-    <output class="min">4</output>
-    <hr style="width: 100%;">
-    <span>Koridor genişliği: </span>
-    <input class="inp" type="range" value="1" min="1" max="3" oninput="this.nextElementSibling.value = this.value">
-    <output class="floor">1</output>
-    <hr style="width: 100%;">
-    <span>Max oda sayısı: </span>
-    <input class="inp" type="range" value="12" min="1" max="24" oninput="this.nextElementSibling.value = this.value">
-    <output class="room">12</output>
-    <hr style="width: 100%;">
-    <span>Mağara genişlik (X): </span>
-    <input class="inp" type="range" value="41" min="1" max="64" oninput="this.nextElementSibling.value = this.value">
-    <output class="Xaxis">41</output>
-    <hr style="width: 100%;">
-    <span>Mağara genişlik (Y): </span>
-    <input class="inp" type="range" value="64" min="1" max="64" oninput="this.nextElementSibling.value = this.value">
-    <output class="Yaxis">64</output>
-  </div>
+
+  <div class="page">
+    <div style="display: flex;flex-direction: column;"> <!--Canvas-->
+        <div id="view"></div>
+        <div id="generate">Oluştur</div>
+    </div>
+
+    <div class="settings"> <!--Settings-->
+      <span>Max oda boyutu: </span>
+      <input class="inp" type="range" value="24" min="1" max="64" oninput="this.nextElementSibling.value = this.value">
+      <output class="max">24</output>
+      <hr style="width: 100%;">
+      <span>Min oda boyutu: </span>
+      <input class="inp" type="range" value="4" min="1" max="64" oninput="this.nextElementSibling.value = this.value">
+      <output class="min">4</output>
+      <hr style="width: 100%;">
+      <span>Koridor genişliği: </span>
+      <input class="inp" type="range" value="1" min="1" max="3" oninput="this.nextElementSibling.value = this.value">
+      <output class="floor">1</output>
+      <hr style="width: 100%;">
+      <span>Max oda sayısı: </span>
+      <input class="inp" type="range" value="12" min="1" max="24" oninput="this.nextElementSibling.value = this.value">
+      <output class="room">12</output>
+      <hr style="width: 100%;">
+      <span>Mağara genişlik (X): </span>
+      <input class="inp" type="range" value="41" min="1" max="64" oninput="this.nextElementSibling.value = this.value">
+      <output class="Xaxis">41</output>
+      <hr style="width: 100%;">
+      <span>Mağara genişlik (Y): </span>
+      <input class="inp" type="range" value="64" min="1" max="64" oninput="this.nextElementSibling.value = this.value">
+      <output class="Yaxis">64</output>
+    </div>
 </div>
 </body>
-  <script type="text/javascript" src="./dungeon-generator.js"></script>
-  <script type="text/javascript" src="./app.js"></script>
-</body>
+  <script type="text/javascript" src="./Js/dungeon-generator.js"></script>
+  <script type="text/javascript" src="./Js/app.js"></script>
+  <script type="text/javascript" src="./Js/FancyText.js"></script>
+
+  </body>
