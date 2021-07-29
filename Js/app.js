@@ -21,7 +21,7 @@ function updateMap(el) {
 
   floorMap.forEach(function(e){
     var txt = e.map(function(cell){
-      return cell.cellType === 'wall' ? '|' : '\u00a0'})
+      return cell.cellType === 'wall' ? 'H' : '\u00a0'})
       .join('');
     append(el,txt);
     }
